@@ -49,7 +49,7 @@
             </div>
 
             <div>
-                <button id="history-btn">History</button>
+                <button id="history-btn" class="border-2 border-gray-100 px-5 rounded-xl py-3">History</button>
             </div>
         </div>
         <!-- Donate and History btn End-->
@@ -57,7 +57,7 @@
     <!-- Navber End -->
     <!-- Main Body Section Start -->
     <main>
-        <section class="bg-white flex flex-col justify-center items-center my-[5rem]">
+        <section id="Cards" class="bg-white flex flex-col justify-center items-center my-[5rem]">
             <!-- Donation Card---1 start -->
             <div class="bg-white rounded-2xl lg:flex  lg:p-[2rem] p-[3.25rem] shadow-2xl w-10/12 lg:w-8/12 mt-10">
                 <div class="w-full lg:w-8/12">
@@ -78,7 +78,8 @@
                     <!-- coin  div End -->
                     <!-- card Title and description start-->
                     <div>
-                        <h1 class="lg:text-2xl text-xl font-bold mt-[1.25rem] ">Donate for Flood at Noakhali, Bangladesh
+                        <h1 id="card-1-title" class="lg:text-2xl text-xl font-bold mt-[1.25rem] ">Donate for Flood at
+                            Noakhali, Bangladesh
                         </h1>
                         <p class="text-2xl text-[#111111B3] mt-[1.25rem] text-justify"> The recent floods in Noakhali
                             have caused
@@ -125,7 +126,7 @@
                     <!-- coin  div End -->
                     <!-- card Title and description start-->
                     <div>
-                        <h1 class="lg:text-2xl text-xl font-bold mt-[1.25rem] ">Donate for Flood Relief in
+                        <h1 id="Title2" class="lg:text-2xl text-xl font-bold mt-[1.25rem] ">Donate for Flood Relief in
                             Feni,Bangladesh
                         </h1>
                         <p class="text-2xl text-[#111111B3] mt-[1.25rem] text-justify"> The recent floods in Noakhali
@@ -173,7 +174,8 @@
                     <!-- coin  div End -->
                     <!-- card Title and description start-->
                     <div>
-                        <h1 class="lg:text-2xl text-xl font-bold mt-[1.25rem] ">Aid for Injured in the Quota Movement
+                        <h1 id="Title-3" class="lg:text-2xl text-xl font-bold mt-[1.25rem] ">Aid for Injured in the
+                            Quota Movement
                         </h1>
                         <p class="text-2xl text-[#111111B3] mt-[1.25rem] text-justify"> The recent floods in Noakhali
                             The recent Quota movement has resulted in numerous injuries and significant hardship for
@@ -201,6 +203,9 @@
 
             <!-- Donation Card---3 End -->
         </section>
+        <div class="flex justify-center items-center">
+            <div id="history-record-container" class="hidden w-7/12"></div>
+        </div>
     </main>
     <!-- Main Body Section End -->
     <footer>
