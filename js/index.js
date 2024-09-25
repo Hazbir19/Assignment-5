@@ -3,10 +3,18 @@ document.getElementById("blogBtn").addEventListener("click", function () {
 });
 
 function updateMoney(intialMoney, inputmoney, donatedValue) {
-  let money = intialMoney - inputmoney;
-  let donateMoney = parseFloat(donatedValue);
-  donateMoney = donateMoney + inputmoney;
-  return [money, donateMoney];
+  if (inputmoney <= 0 || isNaN(inputmoney)) {
+    alert("Invaild Number");
+  } else {
+    if (intialMoney <= 0) {
+      alert("Your balance is Over");
+    } else {
+      let money = intialMoney - inputmoney;
+      let donateMoney = parseFloat(donatedValue);
+      donateMoney = donateMoney + inputmoney;
+      return [money, donateMoney];
+    }
+  }
 }
 
 document.getElementById("DonateBtn1").addEventListener("click", function () {
@@ -24,7 +32,7 @@ document.getElementById("DonateBtn1").addEventListener("click", function () {
   let today = new Date().toLocaleString();
   let record = document.createElement("div");
   record.className =
-    "bg-white p-5 rounded-xl my-[2.5rem] w-full border-2 border-gray-200";
+    "bg-white p-5 rounded-xl my-[2.5rem] lg:w-full w-11/12 border-2 mx-[1.25rem] lg:mx-0 border-gray-200";
   record.innerHTML = `
   <div class="bg-white px-[2.5rem] rounded-2xl w-full">
   <h1 class="text-2xl text-justify font-semibold ">${input1} taka is donate for ${title}</h1>
@@ -32,6 +40,8 @@ document.getElementById("DonateBtn1").addEventListener("click", function () {
   </div> `;
   let recordContainer = document.getElementById("history-record-container");
   recordContainer.insertBefore(record, recordContainer.firstChild);
+  // Model Function
+  my_modal_1.showModal();
 });
 document.getElementById("DonateBtn2").addEventListener("click", function () {
   //Input-field-2
@@ -48,7 +58,7 @@ document.getElementById("DonateBtn2").addEventListener("click", function () {
   let today = new Date().toLocaleString();
   let record = document.createElement("div");
   record.className =
-    "bg-white p-5 rounded-xl my-[2.5rem] w-full border-2 border-gray-200";
+    "bg-white p-5 rounded-xl my-[2.5rem] border-2 lg:w-full w-11/12 mx-[1.25rem] lg:mx-0 border-gray-200";
   record.innerHTML = `
     <div class="bg-white px-[2.5rem] rounded-2xl w-full">
     <h1 class="text-2xl text-justify font-semibold">${input2} taka is donate for ${title}</h1>
@@ -56,6 +66,8 @@ document.getElementById("DonateBtn2").addEventListener("click", function () {
     </div> `;
   let recordContainer = document.getElementById("history-record-container");
   recordContainer.insertBefore(record, recordContainer.firstChild);
+  // Model Function
+  my_modal_1.showModal();
 });
 
 document.getElementById("DonateBtn3").addEventListener("click", function () {
@@ -73,7 +85,7 @@ document.getElementById("DonateBtn3").addEventListener("click", function () {
   let today = new Date().toLocaleString();
   let record = document.createElement("div");
   record.className =
-    "bg-white p-5 rounded-xl my-[2.5rem] w-full border-2 border-gray-200";
+    "bg-white p-5 rounded-xl my-[2.5rem] border-2 lg:w-full w-11/12 mx-[1.25rem] lg:mx-0border-gray-200";
   record.innerHTML = `
       <div class="bg-white px-[2.5rem] rounded-2xl w-full">
       <h1 class="text-2xl text-justify font-semibold">${input3} taka is donate for ${title}</h1>
@@ -81,6 +93,8 @@ document.getElementById("DonateBtn3").addEventListener("click", function () {
       </div> `;
   let recordContainer = document.getElementById("history-record-container");
   recordContainer.insertBefore(record, recordContainer.firstChild);
+  // Model Function
+  my_modal_1.showModal();
 });
 
 //Donation button

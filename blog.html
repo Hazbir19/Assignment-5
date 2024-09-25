@@ -42,6 +42,68 @@
         </section>
         <!-- navberSection End  -->
     </nav>
+    <main class="flex  flex-col justify-center items-center ">
+        <!-- Question--1 -->
+        <div class="collapse collapse-plus bg-base-200 my-[1.5rem] w-8/12">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+                <p>The Document object Model (DOM) is a programing interface for HTML and XML Document. which contain
+                    Html elements for manipulate by Javascript. It's as a tree of object</p>
+            </div>
+        </div>
+        <!-- Question--2 -->
+        <div class="collapse collapse-plus bg-base-200 my-[1.5rem] w-8/12">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                <p>there are several path of select an element from the DOM, depending on the individual use case and
+                    type of your'e trying to select. Some Common methods.
+                    <li>getElementbyId()</li>
+                    <li>getElementbyTagName()</li>
+                    <li>getElementbyClassName()</li>
+                    <li>QuerySelector()</li>
+                    <li>QuerySelectorAll()</li>
+
+                </p>
+            </div>
+        </div>
+        <!-- Question--3 -->
+        <div class="collapse collapse-plus bg-base-200 my-[1.5rem] w-8/12">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why
+                is it useful?</div>
+            <div class="collapse-content">
+                <p>Event Delegation is a technique used in the DOM to handle on events on ancestor element as an
+                    alternative of attaching event listeners to sole child element.This proceed towards takes advantage
+                    of the fact that event bubble up the DOM tree. <br>
+                    <b>Event delegation is useful for many reasons:</b> <br>
+                    <li>It reduces the number of event listeners attached to the DOM</li>
+                    <li>Attaching a individual event listener top ancestor element is more qualityful than attaching
+                        multiple event listener to individual child element</li>
+                    <li>Event Delegation makes it easy to handle events on a large number of child element</li>
+                </p>
+            </div>
+        </div>
+        <!-- Question--4 -->
+        <div class="collapse collapse-plus bg-base-200 my-[1.5rem] w-8/12">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                using the DOM?</div>
+            <div class="collapse-content">
+                <p>The Dom provides many ways to manipulate an element's atributes and style. <br>
+                    <b>Some Commons method:</b> <br>
+                    <li>setAttribute() and removeAttribute() to add or remove attributes</li>
+                    <li>style.cssText to add or remove style</li>
+                    <li>style.propertyName to add or remove style</li>
+                    <li>classList.add() and classList.remove() to add or remove class</li>
+                    <li>classList.toggle() to add or remove class</li>
+                    <li>style.display = "none" to hide an element</li>
+                </p>
+            </div>
+        </div>
+
+    </main>
     <script src="./js/blog.js"></script>
 </body>
 

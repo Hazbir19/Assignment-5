@@ -200,11 +200,28 @@
                 </div>
 
             </div>
-
             <!-- Donation Card---3 End -->
+            <!-- Model -->
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn" onclick="">open modal</button>
+            <dialog id="my_modal_1" class="modal">
+                <div class="modal-box flex flex-col justify-center items-center">
+                    <h1 class="text-5xl font-bold my-[0.5rem] text-center">Congrates</h1>
+                    <img src="./assets/coin.png" alt="" class="w-10 h-10 my-3">
+
+                    <p class="py-4">You Have Donated for Humankind</p>
+                    <h1 class="text-3xl font-bold my-[0.5rem] text-center">Successfully</h1>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close Comfirmation</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </section>
         <div class="flex justify-center items-center">
-            <div id="history-record-container" class="hidden w-7/12"></div>
+            <div id="history-record-container" class="hidden lg:w-7/12"></div>
         </div>
     </main>
     <!-- Main Body Section End -->
