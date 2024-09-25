@@ -85,7 +85,7 @@ document.getElementById("DonateBtn3").addEventListener("click", function () {
   let today = new Date().toLocaleString();
   let record = document.createElement("div");
   record.className =
-    "bg-white p-5 rounded-xl my-[2.5rem] border-2 lg:w-full w-11/12 mx-[1.25rem] lg:mx-0border-gray-200";
+    "bg-white p-5 rounded-xl my-[2.5rem] border-2 lg:w-full w-11/12 mx-[1.25rem] lg:mx-0 border-gray-200";
   record.innerHTML = `
       <div class="bg-white px-[2.5rem] rounded-2xl w-full">
       <h1 class="text-2xl text-justify font-semibold">${input3} taka is donate for ${title}</h1>
