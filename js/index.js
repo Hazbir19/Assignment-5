@@ -1,5 +1,5 @@
 document.getElementById("blogBtn").addEventListener("click", function () {
-  window.location.href = "/blog.html";
+  window.location.href = "Assignment-5/blog.html";
 });
 
 function updateMoney(intialMoney, inputmoney, donatedValue) {
